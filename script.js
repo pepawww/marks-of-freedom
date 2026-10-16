@@ -15,7 +15,7 @@ const peonyHotspots = document.querySelector('#peonyHotspots');
 
 const models = [
   {
-    file: './models/tattoo-01.obj',
+    file: './models/tattoo-01.txt',
     title: 'Tattoo 01',
     label: '01 / TATTOO 01',
     kicker: 'IMAGINED MARK 01',
@@ -24,7 +24,7 @@ const models = [
     peony: false
   },
   {
-    file: './models/tattoo-02.obj',
+    file: './models/tattoo-02.txt',
     title: 'Tattoo 02',
     label: '02 / TATTOO 02',
     kicker: 'IMAGINED MARK 02',
@@ -33,7 +33,7 @@ const models = [
     peony: false
   },
   {
-    file: './models/tattoo-03.obj',
+    file: './models/tattoo-03.txt',
     title: 'Peony',
     label: '03 / PEONY',
     kicker: 'AN IMAGINED MARK OF SELF-EXPRESSION',
@@ -174,7 +174,7 @@ function showModel(index) {
     (error) => {
       if (thisRequest !== requestId) return;
       console.error(error);
-      loading.textContent = 'The 3D model could not be loaded. Open this folder with Live Server in VS Code.';
+      loading.textContent = 'The 3D model could not be loaded. Please refresh the page.';
     }
   );
 }
