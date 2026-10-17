@@ -1255,3 +1255,20 @@ h1 {
   min-width: 0;
   width: 100%;
 }
+
+
+/* v21 — project title update */
+.project-title {
+  font-size: clamp(54px, 6.2vw, 94px);
+  line-height: 1.01;
+  max-width: 780px;
+}
+
+@media (max-width: 900px) {
+  .project-title { font-size: clamp(52px, 9vw, 78px); }
+}
+
+@media (max-width: 640px) {
+  .project-title { font-size: 50px; line-height: 1.03; }
+  .brand { font-size: 9px; letter-spacing: .09em; }
+}
