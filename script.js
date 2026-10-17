@@ -16,29 +16,29 @@ const peonyHotspots = document.querySelector('#peonyHotspots');
 const models = [
   {
     file: './models/tattoo-01.txt',
-    title: 'Tattoo 01',
-    label: '01 / TATTOO 01',
+    title: 'Apricot Blossom',
+    label: '01 / APRICOT BLOSSOM',
     kicker: 'IMAGINED MARK 01',
-    intro: 'The first tattoo can already be explored as a three-dimensional object. Its final symbolic interpretation will be added once the group text is ready.',
-    body: 'Rotate the object to see how the flat ornamental drawing has become a sculptural mark that wraps through space.',
+    intro: 'In Chinese poetry, the apricot blossom represents early spring and youth. A Song dynasty poem by Ye Shaoweng describes a locked garden whose spring cannot be contained: one branch of red apricot reaches beyond the wall.',
+    body: 'Here, a vine of Manchu script grows between two blossoms. We imagine the mark worn by a woman who could not leave the courtyard, but whose feelings still found a way beyond it.',
     peony: false
   },
   {
     file: './models/tattoo-02.txt',
-    title: 'Tattoo 02',
-    label: '02 / TATTOO 02',
+    title: 'Crabapple Blossom',
+    label: '02 / CRABAPPLE BLOSSOM',
     kicker: 'IMAGINED MARK 02',
-    intro: 'The second tattoo is presented here as another imagined bodily mark. Its final interpretation and historical references can be inserted later without changing the interaction.',
-    body: 'Drag, rotate and zoom to examine the form from angles that are impossible in the original two-dimensional drawing.',
+    intro: 'The crabapple blossom has almost no scent. Chinese poets praised it for modesty and for refusing to bloom carelessly.',
+    body: 'In Qing decorative art it often appears beside the peony and magnolia as a wish for wealth and honour. Here, its beauty belongs to no household: ribbons of Manchu script wind around the flower like words she keeps for herself.',
     peony: false
   },
   {
     file: './models/tattoo-03.txt',
     title: 'Peony',
     label: '03 / PEONY',
-    kicker: 'AN IMAGINED MARK OF SELF-EXPRESSION',
-    intro: 'In traditional Qing patterns, the peony represents prosperity and beauty. Here, it is reinterpreted as a symbol of women’s freedom of self-expression.',
-    body: 'Just as the peony defines its own bloom, the tattoo imagines the body as a space where emotions and identity may be expressed freely.',
+    kicker: 'IMAGINED MARK 03',
+    intro: 'In Qing decorative art, the peony represents prosperity, honour and beauty, appearing on everything from embroidered robes to porcelain.',
+    body: 'Here it becomes a symbol of freedom of self-expression. Just as the peony opens in its own way, she chooses how to carry her emotions.',
     peony: true
   }
 ];
@@ -224,21 +224,27 @@ document.querySelectorAll('.model-jump').forEach((button) => {
 const notes = {
   symbol: {
     index: '01 / SYMBOL',
-    title: 'Traditional symbol',
-    text: 'In traditional Qing patterns, the peony represents prosperity and beauty.',
+    title: 'Peony',
+    text: 'In Qing decorative art, the peony represents prosperity, honour and beauty, appearing on everything from embroidered robes to porcelain.',
     manchu: false
   },
   freedom: {
     index: '02 / REINTERPRETATION',
-    title: 'Freedom to bloom',
-    text: 'Here, the peony is reinterpreted as a symbol of women’s freedom of self-expression. Just as the peony defines its own bloom, the tattoo imagines the body as a space where emotions and identity may be expressed freely.',
+    title: 'Freedom of self-expression',
+    text: 'Here the peony becomes a symbol of a woman’s freedom to express herself. Just as the peony opens in its own way, she chooses how to carry her emotions.',
     manchu: false
   },
   inscription: {
     index: '03 / INSCRIPTION',
     title: 'Follow your heart',
-    text: 'The design incorporates a Manchu inscription that reinforces the idea of listening to one’s own inner voice rather than allowing identity to be defined entirely from outside.',
+    text: 'The design incorporates the Manchu phrase ᡤᡳᠶᠠᠨ ᠮᡠᠵᡳᠯᡝᠨ — “Follow your heart.”',
     manchu: true
+  },
+  'why-skin': {
+    index: 'WHY THE SKIN?',
+    title: 'Why the skin?',
+    text: 'Across cultures, tattoos have marked transitions, belonging and identity. Among the Li people of Hainan, women’s tattoos once signalled adulthood and were believed to allow ancestors to recognise them after death. Contemporary research also describes tattooing as a way of reclaiming authorship over the body — through self-expression, emotional regulation and regained control. A tattoo is not a cure. But it can give a feeling a lasting form, one chosen by the wearer. That is the idea we carry into our imagined past.',
+    manchu: false
   }
 };
 
